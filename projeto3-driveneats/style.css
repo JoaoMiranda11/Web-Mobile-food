@@ -1,0 +1,104 @@
+body{
+    background-color: #E5E5E5;
+    max-width: 500px;
+}
+
+.topo{
+    width: 100%;
+    height: 92px;
+    background-color: #CF2B2B;
+    position: fixed;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    left: 0;
+    top:0;
+}
+
+.topo .nome{
+    font-family: 'Righteous';
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 55px;
+    letter-spacing: -0.012em;
+    color: #FFFFFF;
+    margin-left: 10px;
+}
+.topo .sub{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    margin-left: 10px;
+}
+.margem{
+    height: 100px;
+}
+.margem2{
+    height: 50px;
+}
+.titulo{
+    margin-top: 15px;
+    font-family: 'Righteous';
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 0.018em;
+    color: #333333;
+}
+.cardapio{
+    display: flex;
+    width: auto;
+    overflow-x:scroll;
+}
+.comidas{
+    margin-right: 16px;
+    display: column;
+    width: 172px;
+    height: auto;
+    background-color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+}
+.comida{
+    margin: 14px;
+}
+.comida img{
+    margin-bottom: 15px;
+}
+
+.rodape{
+    width: 100%;
+    background-color: #FFFFFF;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.rodape .finalizar{
+
+    background-color: #E5E5E5;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 15px 5px 15px;
+}
+.rodape .finalizar .sel{
+    display: column;
+    color: #FFFFFF;
+}
+
+
+
+/*
+.comidas.selecionada{
+    border-color: green;
+}
+
+.comida.selecionada.ion-icon{
+    color: green;
+    opacity: 1;
+
+}
+/*<ion-icon name="checkmark-circle"></ion-icon>*/
