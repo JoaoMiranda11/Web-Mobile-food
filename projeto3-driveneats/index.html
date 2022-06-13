@@ -11,113 +11,121 @@
     <title>driveneats</title>
   </head>
   <body>
+    <div class="bgmodal" id="modbg">
+    </div>
+    <div class="modal" id="modcontent">
+    </div>
+
     <div class="topo">
         <div class="nome">DrivenEats</div>
         <div class="sub">Sua comida em 6 minutos</div>
     </div>
-    <div class="margem"></div>
-    <div class="titulo">Primeiro, seu prato</div>
-    <div class="cardapio">
-        <div class="comidas"><div class="comida">
-            <img src="img/frango_yin_yang 1.png"/>
-            <strong>Frango Yin Yang</strong><br>
-            Um pouco de batata, um pouco de salada<br>
-            <strong>R$ 14,90</strong>
-        </div></div>
-        <div class="comidas"><div class="comida">
-            <img src="img/frango_yin_yang 1.png"/>
-            <strong>Frango Yin Yang</strong><br>
-            Um pouco de batata, um pouco de salada<br>
-            <strong>R$ 14,90</strong>
-        </div></div>
-        <div class="comidas"><div class="comida">
-            <img src="img/frango_yin_yang 1.png"/>
-            <strong>Frango Yin Yang</strong><br>
-            Um pouco de batata, um pouco de salada<br>
-            <strong>R$ 14,90</strong>
-        </div></div>
-        <div class="comidas"><div class="comida">
-            <img src="img/frango_yin_yang 1.png"/>
-            <strong>Frango Yin Yang</strong><br>
-            Um pouco de batata, um pouco de salada<br>
-            <strong>R$ 14,90</strong>
-        </div></div>
-        <div class="comidas"><div class="comida">
-            <img src="img/frango_yin_yang 1.png"/>
-            <strong>Frango Yin Yang</strong><br>
-            Um pouco de batata, um pouco de salada<br>
-            <strong>R$ 14,90</strong>
-        </div></div>
+
+    <div class="page">
+        <div class="titulo">Primeiro, seu prato</div>
+        <div class="cardapio" id="campo1">
+            <div class="comidas" id="prato_1" onclick="addProduto(this.id, 'campo1')">
+                <img src="img/frango_yin_yang 1.png"/>
+                <div class>
+                    <strong>Frango Yin Yang</strong><br>
+                </div>
+                Um pouco de batata, um pouco de salada<br>
+                <strong>R$ 14,90</strong>
+            </div>
+            <div class="comidas" id="prato_2" onclick="addProduto(this.id, 'campo1')" >
+                <img src="img/frango_yin_yang 1.png"/>
+                <strong>Frango Yin Yang</strong><br>
+                Um pouco de batata, um pouco de salada<br>
+                <strong>R$ 14,90</strong>
+            </div>
+            <div class="comidas"  id="prato_3" onclick="addProduto(this.id, 'campo1')">
+                <img src="img/frango_yin_yang 1.png"/>
+                <strong>Frango Yin Yang</strong><br>
+                Um pouco de batata, um pouco de salada<br>
+                <strong>R$ 14,90</strong>
+            </div>
+            <div class="comidas"  id="prato_4" onclick="addProduto(this.id, 'campo1')">
+                <img src="img/frango_yin_yang 1.png"/>
+                <strong>Frango Yin Yang</strong><br>
+                Um pouco de batata, um pouco de salada<br>
+                <strong>R$ 14,90</strong>
+            </div>
+        </div>
+    
+        <div class="titulo">Agora, sua bebida</div>
+        <div class="cardapio" id="campo2">
+            <div class="comidas" id="bebida_1" onclick="addProduto(this.id, 'campo2')">
+                <img src="img/coquinha_gelada 1.png"/>
+                <strong>Coquinha gelada</strong><br>
+                Lata 350ml<br>
+                <strong>R$ 4,90</strong>
+            </div>
+            <div class="comidas" id="bebida_2" onclick="addProduto(this.id, 'campo2')">
+                <img src="img/coquinha_gelada 1.png"/>
+                <strong>Coquinha gelada</strong><br>
+                Lata 350ml<br>
+                <strong>R$ 4,90</strong>
+            </div>
+            <div class="comidas" id="bebida_3" onclick="addProduto(this.id, 'campo2')">
+                <img src="img/coquinha_gelada 1.png"/>
+                <strong>Coquinha gelada</strong><br>
+                Lata 350ml<br>
+                <strong>R$ 4,90</strong>
+            </div>
+            <div class="comidas" id="bebida_4" onclick="addProduto(this.id, 'campo2')">
+                <img src="img/coquinha_gelada 1.png"/>
+                <strong>Coquinha gelada</strong><br>
+                Lata 350ml<br>
+                <strong>R$ 4,90</strong>
+            </div>
+            <div class="comidas" id="bebida_5" onclick="addProduto(this.id, 'campo2')">
+                <img src="img/coquinha_gelada 1.png"/>
+                <strong>Coquinha gelada</strong><br>
+                Lata 350ml<br>
+                <strong>R$ 4,90</strong>
+            </div>
+        </div>
+    
+        <div class="titulo">Por fim, sua sobremesa</div>
+        <div class="cardapio" id="campo3">
+            <div class="comidas" id="sobremesa_1" onclick="addProduto(this.id, 'campo3')">
+                <img src="img/pudim 1.png"/>
+                <strong>Pudim</strong><br>
+                Apenas pudim<br>
+                <strong>R$ 7,90</strong>
+            </div>
+            <div class="comidas" id="sobremesa_2" onclick="addProduto(this.id, 'campo3')">
+                <img src="img/pudim 1.png"/>
+                <strong>Pudim</strong><br>
+                Apenas pudim<br>
+                <strong>R$ 7,90</strong>
+            </div>
+            <div class="comidas" id="sobremesa_3" onclick="addProduto(this.id, 'campo3')">
+                <img src="img/pudim 1.png"/>
+                <strong>Pudim</strong><br>
+                Apenas pudim<br>
+                <strong>R$ 7,90</strong>
+            </div>
+            <div class="comidas" id="sobremesa_4" onclick="addProduto(this.id, 'campo3')">
+                <img src="img/pudim 1.png"/>
+                <strong>Pudim</strong><br>
+                Apenas pudim<br>
+                <strong>R$ 7,90</strong>
+            </div>
+            <div class="comidas" id="sobremesa_5" onclick="addProduto(this.id, 'campo3')">
+                <img src="img/pudim 1.png"/>
+                <strong>Pudim</strong><br>
+                Apenas pudim<br>
+                <strong>R$ 7,90</strong>
+            </div>
+        </div>
     </div>
-    <div class="titulo">Agora, sua bebida</div>
-    <div class="cardapio">
-        <div class="comidas"><div class="comida">
-            <img src="img/coquinha_gelada 1.png"/>
-            <strong>Coquinha gelada</strong><br>
-            Lata 350ml<br>
-            <strong>R$ 4,90</strong>
-        </div></div>
-        <div class="comidas"><div class="comida">
-            <img src="img/coquinha_gelada 1.png"/>
-            <strong>Coquinha gelada</strong><br>
-            Lata 350ml<br>
-            <strong>R$ 4,90</strong>
-        </div></div>
-        <div class="comidas"><div class="comida">
-            <img src="img/coquinha_gelada 1.png"/>
-            <strong>Coquinha gelada</strong><br>
-            Lata 350ml<br>
-            <strong>R$ 4,90</strong>
-        </div></div>
-        <div class="comidas"><div class="comida">
-            <img src="img/coquinha_gelada 1.png"/>
-            <strong>Coquinha gelada</strong><br>
-            Lata 350ml<br>
-            <strong>R$ 4,90</strong>
-        </div></div>
-        <div class="comidas"><div class="comida">
-            <img src="img/coquinha_gelada 1.png"/>
-            <strong>Coquinha gelada</strong><br>
-            Lata 350ml<br>
-            <strong>R$ 4,90</strong>
-        </div></div>
-    </div>
-    <div class="titulo">Por fim, sua sobremesa</div>
-    <div class="cardapio">
-        <div class="comidas"><div class="comida">
-            <img src="img/pudim 1.png"/>
-            <strong>Pudim</strong><br>
-            Apenas pudim<br>
-            <strong>R$ 7,90</strong>
-        </div></div>
-        <div class="comidas"><div class="comida">
-            <img src="img/pudim 1.png"/>
-            <strong>Pudim</strong><br>
-            Apenas pudim<br>
-            <strong>R$ 7,90</strong>
-        </div></div>
-        <div class="comidas"><div class="comida">
-            <img src="img/pudim 1.png"/>
-            <strong>Pudim</strong><br>
-            Apenas pudim<br>
-            <strong>R$ 7,90</strong>
-        </div></div>
-        <div class="comidas"><div class="comida">
-            <img src="img/pudim 1.png"/>
-            <strong>Pudim</strong><br>
-            Apenas pudim<br>
-            <strong>R$ 7,90</strong>
-        </div></div>
-        <div class="comidas"><div class="comida">
-            <img src="img/pudim 1.png"/>
-            <strong>Pudim</strong><br>
-            Apenas pudim<br>
-            <strong>R$ 7,90</strong>
-        </div></div>
-    </div>
-    <div class="margem2"></div>
+
     <div class="rodape">
-        <div class="finalizar"><div class="sel">Selecione os 3 itens <br> para fechar o pedido</div></div>
+        <button class="sel" id="botaoFechar" onclick="fecharPedido()">
+            Selecione os 3 itens <br> 
+            para fechar o pedido
+        </button>
     </div>
 
   </body>   
