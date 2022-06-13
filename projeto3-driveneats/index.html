@@ -11,9 +11,13 @@
     <title>driveneats</title>
   </head>
   <body>
-    <div class="bgmodal" id="modbg">
-    </div>
+    <div class="bgmodal" id="modbg"></div>
     <div class="modal" id="modcontent">
+        <div id="compras">
+
+        </div>
+        <div class="confirmarPedido" onclick="pedir();">Tudo certo, pode pedir!</div>
+        <div class="cancelarPedido" onclick="fecharPedido(false)">Cancelar</div>
     </div>
 
     <div class="topo">
@@ -26,29 +30,27 @@
         <div class="cardapio" id="campo1">
             <div class="comidas" id="prato_1" onclick="addProduto(this.id, 'campo1')">
                 <img src="img/frango_yin_yang 1.png"/>
-                <div class>
-                    <strong>Frango Yin Yang</strong><br>
-                </div>
+                <div class="nome" value="Frango Yin Yang">Frango Yin Yang</div>
                 Um pouco de batata, um pouco de salada<br>
-                <strong>R$ 14,90</strong>
+                <div class="valor"  value="14.90" value="14.90">R$ 14,90</div>
             </div>
             <div class="comidas" id="prato_2" onclick="addProduto(this.id, 'campo1')" >
                 <img src="img/frango_yin_yang 1.png"/>
-                <strong>Frango Yin Yang</strong><br>
+                <div class="nome" value="Frango Yin Yang">Frango Yin Yang</div>
                 Um pouco de batata, um pouco de salada<br>
-                <strong>R$ 14,90</strong>
+                <div class="valor"  value="14.90">R$ 14,90</div>
             </div>
             <div class="comidas"  id="prato_3" onclick="addProduto(this.id, 'campo1')">
                 <img src="img/frango_yin_yang 1.png"/>
-                <strong>Frango Yin Yang</strong><br>
+                <div class="nome" value="Frango Yin Yang">Frango Yin Yang</div>
                 Um pouco de batata, um pouco de salada<br>
-                <strong>R$ 14,90</strong>
+                <div class="valor"  value="14.90">R$ 14,90</div>
             </div>
             <div class="comidas"  id="prato_4" onclick="addProduto(this.id, 'campo1')">
                 <img src="img/frango_yin_yang 1.png"/>
-                <strong>Frango Yin Yang</strong><br>
+                <div class="nome" value="Frango Yin Yang">Frango Yin Yang</div>
                 Um pouco de batata, um pouco de salada<br>
-                <strong>R$ 14,90</strong>
+                <div class="valor"  value="14.90">R$ 14,90</div>
             </div>
         </div>
     
@@ -56,33 +58,33 @@
         <div class="cardapio" id="campo2">
             <div class="comidas" id="bebida_1" onclick="addProduto(this.id, 'campo2')">
                 <img src="img/coquinha_gelada 1.png"/>
-                <strong>Coquinha gelada</strong><br>
+                <div class="nome" value="Coquinha gelada">Coquinha gelada</div>
                 Lata 350ml<br>
-                <strong>R$ 4,90</strong>
+                <div class="valor" value="4.90">R$ 4,90</div>
             </div>
             <div class="comidas" id="bebida_2" onclick="addProduto(this.id, 'campo2')">
                 <img src="img/coquinha_gelada 1.png"/>
-                <strong>Coquinha gelada</strong><br>
+                <div class="nome" value="Coquinha gelada">Coquinha gelada</div>
                 Lata 350ml<br>
-                <strong>R$ 4,90</strong>
+                <div class="valor" value="4.90">R$ 4,90</div>
             </div>
             <div class="comidas" id="bebida_3" onclick="addProduto(this.id, 'campo2')">
                 <img src="img/coquinha_gelada 1.png"/>
-                <strong>Coquinha gelada</strong><br>
+                <div class="nome" value="Coquinha gelada">Coquinha gelada</div>
                 Lata 350ml<br>
-                <strong>R$ 4,90</strong>
+                <div class="valor" value="4.90">R$ 4,90</div>
             </div>
             <div class="comidas" id="bebida_4" onclick="addProduto(this.id, 'campo2')">
                 <img src="img/coquinha_gelada 1.png"/>
-                <strong>Coquinha gelada</strong><br>
+                <div class="nome" value="Coquinha gelada">Coquinha gelada</div>
                 Lata 350ml<br>
-                <strong>R$ 4,90</strong>
+                <div class="valor" value="4.9">R$ 4,90</div>
             </div>
             <div class="comidas" id="bebida_5" onclick="addProduto(this.id, 'campo2')">
                 <img src="img/coquinha_gelada 1.png"/>
-                <strong>Coquinha gelada</strong><br>
+                <div class="nome" value="Coquinha gelada">Coquinha gelada</div>
                 Lata 350ml<br>
-                <strong>R$ 4,90</strong>
+                <div class="valor" value="4.90">R$ 4,90</div>
             </div>
         </div>
     
@@ -90,39 +92,39 @@
         <div class="cardapio" id="campo3">
             <div class="comidas" id="sobremesa_1" onclick="addProduto(this.id, 'campo3')">
                 <img src="img/pudim 1.png"/>
-                <strong>Pudim</strong><br>
+                <div class="nome" value="Pudim">Pudim</div>
                 Apenas pudim<br>
-                <strong>R$ 7,90</strong>
+                <div class="valor" value="7.90">R$ 7,90</div>
             </div>
             <div class="comidas" id="sobremesa_2" onclick="addProduto(this.id, 'campo3')">
                 <img src="img/pudim 1.png"/>
-                <strong>Pudim</strong><br>
+                <div class="nome" value="Pudim">Pudim</div>
                 Apenas pudim<br>
-                <strong>R$ 7,90</strong>
+                <div class="valor" value="7.90">R$ 7,90</div>
             </div>
             <div class="comidas" id="sobremesa_3" onclick="addProduto(this.id, 'campo3')">
                 <img src="img/pudim 1.png"/>
-                <strong>Pudim</strong><br>
+                <div class="nome" value="Pudim">Pudim</div>
                 Apenas pudim<br>
-                <strong>R$ 7,90</strong>
+                <div class="valor" value="7.90">R$ 7,90</div>
             </div>
             <div class="comidas" id="sobremesa_4" onclick="addProduto(this.id, 'campo3')">
                 <img src="img/pudim 1.png"/>
-                <strong>Pudim</strong><br>
+                <div class="nome" value="Pudim">Pudim</div>
                 Apenas pudim<br>
-                <strong>R$ 7,90</strong>
+                <div class="valor" value="7.90">R$ 7,90</div>
             </div>
             <div class="comidas" id="sobremesa_5" onclick="addProduto(this.id, 'campo3')">
                 <img src="img/pudim 1.png"/>
-                <strong>Pudim</strong><br>
+                <div class="nome" value="Pudim">Pudim</div>
                 Apenas pudim<br>
-                <strong>R$ 7,90</strong>
+                <div class="valor" value="7.90">R$ 7,90</div>
             </div>
         </div>
     </div>
 
     <div class="rodape">
-        <button class="sel" id="botaoFechar" onclick="fecharPedido()">
+        <button class="sel" id="botaoFechar" onclick="fecharPedido(true)">
             Selecione os 3 itens <br> 
             para fechar o pedido
         </button>
