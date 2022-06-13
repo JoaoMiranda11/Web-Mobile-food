@@ -84,8 +84,18 @@ body{
     margin-top: 5px;
 }
 
+.comidas .valor img {
+    opacity: 0;
+    margin: 0px;
+    margin-left: 64px;
+}
+
 .selected {
     border: 2px solid green;    
+}
+
+.selected .valor img{
+    opacity: 1; 
 }
 
 .comidas img{
